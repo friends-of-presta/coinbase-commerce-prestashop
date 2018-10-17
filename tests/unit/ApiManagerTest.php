@@ -1,5 +1,4 @@
 <?php
-use \Mockery;
 
 class ApiManagerTest extends Mockery\Adapter\Phpunit\MockeryTestCase {
     

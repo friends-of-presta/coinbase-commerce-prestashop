@@ -1,5 +1,4 @@
 <?php
-use \Mockery;
 
 class WebhookTest extends Mockery\Adapter\Phpunit\MockeryTestCase {
     

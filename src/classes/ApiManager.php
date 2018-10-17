@@ -5,7 +5,7 @@ if (!defined('_PS_VERSION_')) {
 }
 
 if (defined('_PS_MODULE_DIR_')) {
-    require_once _PS_MODULE_DIR_ . 'coinbase/classes/CurlManager.php';
+    require_once _PS_MODULE_DIR_ . 'coinbase/src/classes/CurlManager.php';
 }
 
 class ApiManager {

@@ -1,5 +1,4 @@
 <?php
-use \Mockery;
 
 class CoinbaseTest extends Mockery\Adapter\Phpunit\MockeryTestCase {
 

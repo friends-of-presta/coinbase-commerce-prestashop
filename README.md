@@ -8,7 +8,7 @@
 3. Add an Webhook Endpoint which points to [https://<YOUR_WEBSITE>/module/coinbase/webhook]()
 
 ## Setup the Plugin
-4. Copy the `coinbase/` folder to your Prestashop `modules/` folder.
+4. Copy the project into your Prestashop `modules/` folder, and rename it `coinbase`.
 5. Login to your Prestashop Back Office, navigate to the Modules tab, go to the "Installed Modules" tab and search for "Coinbase Commerce". Click Install to activate the plugin.
 6. Click Configure to go to the settings page of the plugin. Set the API Key to the key that you created in step 2.
 
@@ -24,4 +24,4 @@ International/Translations tab in the Prestashop Back Office.
 
 This Prestashop plugin is using the composer dependencies Mockery and PHPUnit to do unit testing. Because of the limitations of Mockery all unit tests need to be run as isolated processes. 
 
-You run the tests with `vendor/phpunit/phpunit/phpunit --process-isolation`.
+You run the tests with `vendor/phpunit/phpunit/phpunit`.

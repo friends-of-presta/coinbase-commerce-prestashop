@@ -7,7 +7,7 @@ if (!defined('_PS_VERSION_')) {
 }
 
 if (defined('_PS_MODULE_DIR_')) {
-    require_once _PS_MODULE_DIR_ . 'coinbase/classes/ConfigManager.php';
+    require_once _PS_MODULE_DIR_ . 'coinbase/src/classes/ConfigManager.php';
 }
 
 class Coinbase extends PaymentModule {

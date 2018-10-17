@@ -1,5 +1,4 @@
 <?php
-use \Mockery;
 
 class ConfigManagerTest extends Mockery\Adapter\Phpunit\MockeryTestCase {
 

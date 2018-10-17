@@ -1,6 +1,9 @@
 <?php
-use \Mockery;
 
+/**
+ * @runTestsInSeparateProcesses
+ * @preserveGlobalState disabled
+ */
 class ProcessTest extends Mockery\Adapter\Phpunit\MockeryTestCase {
     
     public function setup() {
@@ -49,6 +52,7 @@ class ProcessTest extends Mockery\Adapter\Phpunit\MockeryTestCase {
     /**
      * Test that the apiCreateCharge method makes an API call 
      * to the correct path and including all mandatory fields.
+     *
      */
     public function testApiCreateCharge() {
         Mockery::mock('alias:\Configuration')->shouldReceive('get')->andReturn('shopName');
@@ -58,7 +62,7 @@ class ProcessTest extends Mockery\Adapter\Phpunit\MockeryTestCase {
             ->shouldReceive('getCartTotal')->andReturn(10)->once()
             ->shouldReceive('getOrderConfirmationUrl')->andReturn('/order-confirm')->once();
 
-        Mockery::mock('overload:\ApiManager')
+        Mockery::mock('alias:\ApiManager')
             ->shouldReceive('create')->andReturnSelf()
             ->shouldReceive('post')->with(
                 '/charges/', 

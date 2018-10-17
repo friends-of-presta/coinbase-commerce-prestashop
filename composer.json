@@ -6,6 +6,6 @@
         "mockery/mockery": "^1.1"
     }, 
     "autoload": {
-        "classmap": ["coinbase/"]
+        "classmap": ["src/", "coinbase.php"]
     }
 }
